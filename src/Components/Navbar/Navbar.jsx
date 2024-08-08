@@ -9,8 +9,9 @@ export default function Navbar() {
                     <nav className="navbar navbar-expand-lg navbar-dark">
                         <div className="container">
 
-                            <Link to="/" className="navbar-brand logo_h"><img src="./Images/MERN Stack developer.png" className=" logo" alt="Logo Not Found !" /></Link>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <Link to="/" className="navbar-brand logo_h"><img src="./Images/MERN Stack.png" className="logo" alt="Logo Not Found !" /></Link>
+                            <p className="nav-title">Innovation and Development</p>
+                            <button class="navbar-toggler toggles" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
 

@@ -26,7 +26,7 @@ export default function Footer() {
                         contact.map((value)=>{
                             return(
                                 <>
-                                    <a className="btn" href={value.links} target="_blank"><img src={value.img} alt="fb" height="40px" /></a>
+                                    <a className="btn" href={value.links} target="_blank"><img src={value.img} alt="Icons Not Found !" height="40px" /></a>
                                 </>
                             )
                         })
