@@ -1,0 +1,154 @@
+@media screen and (max-width : 640px) {
+
+    .logo {
+        position: relative;
+        right: 40px;
+        height: 70px;
+        width: 170px;
+        border-radius: 20px;
+    }
+    
+    .nav {
+        font-size: 17px;
+        position: relative;
+        left: 3rem;
+        width: 100%;
+    }
+
+    .nav li {
+        position: relative;
+        right: 50px;
+        padding: 8px 12px;
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .main-img {
+        position: relative;
+        left: 250px;
+        bottom: 200px;
+        height: 470px;
+        width: 330px;
+    }
+
+    #home {
+        height: 500px;
+    }
+
+    .info {
+       position: relative;
+       right: 40px;
+       top: 200px;
+    }
+
+    .info h3{
+        margin-top: 30px;
+    }
+
+    .title {
+        position: relative;
+        bottom: 10px;
+        color: white;
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    .typewriter {
+        position: relative;
+        bottom: 20px;
+        font-size: 25px;
+    }
+
+    .resume {
+        position: relative;
+        bottom: 10px;
+        padding: 1px;
+    }
+    
+.cv-btn {
+    border-radius: 20px;
+    background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+}
+
+.about-img{
+    display: none;
+}
+
+.main_title {
+    position: relative;
+    bottom: 30px;
+    right: 140px;
+    padding: 60px;
+    width: 600px;
+}
+
+
+/* skills */
+.skill-gridy {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    left: 30px;
+    gap: 30px 30px;
+    padding: 40px;
+    width: 600px;
+}
+
+
+/* experience */
+.experience {
+    position: relative;
+    bottom: 0px;
+    top: 30px;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 220px;
+}
+
+.experience-div{
+   position: relative;
+   right: 40px;
+}
+
+.experienced {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.main_title {
+    position: relative;
+    bottom: 30px;
+    right: 160px;
+    padding: 60px;
+    width: 600px;
+}
+
+.main_title h1 {
+    font-weight: bolder;
+    margin-left: 25px;
+}
+
+.main_title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-left: 55px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.about-desc{
+    margin-bottom: 0px;
+    margin-left: 30px;
+    color: gray;
+}
+
+.service-name{
+    margin-left: 40px;
+}
+}
