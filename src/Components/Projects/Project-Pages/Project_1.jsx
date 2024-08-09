@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'; // Import the CSS file
 
 import { blogify } from "../../../Data/Projects/Project_data"
 import Footer from "../../Footer/Footer"
+import { Link } from "react-router-dom";
 
 export default function Project_1() {
   
@@ -62,6 +63,11 @@ export default function Project_1() {
             }
        </ul>
 
+
+       <div className="repo">
+           <Link to="https://github.com/RohanPatil-dev/Blogging-Platform-API" target="_blank"><img src="./Images/github-icon.png" height="70px" alt="" /></Link>
+           <p>Project Repository</p>
+       </div>
        <Footer />
       </>
 

@@ -292,6 +292,23 @@
     width: 600px;
     color: gray;
   }
+
+  .repo{
+    position: relative;
+    left: 240px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.repo img{
+   height: 100px;
+}
+
+.repo p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 38px;
+}
 }
 
 
@@ -601,6 +618,23 @@
     width: 600px;
     color: gray;
   }
+
+  .repo{
+    position: relative;
+    left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.repo img{
+   height: 100px;
+}
+
+.repo p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 38px;
+}
 }
 
 

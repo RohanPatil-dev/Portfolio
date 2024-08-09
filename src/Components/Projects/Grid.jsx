@@ -18,7 +18,7 @@ export default function Grid() {
 
     return (
         <>
-            <div className="">
+            <div className="container">
                 <div className="row" data-aos="fade-up">
                     {
                         projects.map((value) => {

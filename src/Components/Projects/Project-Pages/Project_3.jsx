@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'; // Import the CSS file
 
 import { admin } from "../../../Data/Projects/Project_data"
 import Footer from "../../Footer/Footer"
+import { Link } from "react-router-dom";
 
 export default function Project_3() {
 
@@ -73,6 +74,13 @@ export default function Project_3() {
           })
         }
       </ul>
+
+      <div className="repo">
+           <Link to="https://github.com/RohanPatil-dev/Machine-Test-Backend" target="_blank"><img src="./Images/github-icon.png" height="70px" alt="" /></Link>
+           <p>Project Repository</p>
+       </div>
+
+      
 
       <Footer />
     </>

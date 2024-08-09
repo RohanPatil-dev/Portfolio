@@ -393,3 +393,20 @@ body {
 .copyright a {
     color: #9da6ac;
 }
+
+.repo{
+    position: relative;
+    left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.repo img{
+   height: 100px;
+}
+
+.repo p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 38px;
+}
