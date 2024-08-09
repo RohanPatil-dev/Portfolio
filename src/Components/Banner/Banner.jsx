@@ -16,15 +16,14 @@ export default function Banner() {
 
     return (
         <>
-            <div className="container-fluid my-6 mt-0 bg-dark" id="home">
-                <div className="container">
-                    <div className="row g-5 align-items-center">
-                        <div className="col-lg-6 py-6 pb-0 pt-lg-0 info">
-                            <h2 className="text-primary mb-3">I'm</h2>
-                            <p className="mb-3 title">Rohan Patil</p>
-                            <p className="typed-text-output d-inline text-light typewriter">
+            <div className="bg-dark" id="home" >
+                <div className="info">
+                    <div>
+                        <h1 className="text-primary mb-3">I'm</h1>
+                        <p className="mb-3 title">Rohan Patil</p>
+                        <p className="typed-text-output text-light typewriter">
                             <Typewriter
-                                words={["MERN Full Stack Web Developer","Web Designer", "Web Developer", "Front End Developer", "Back End Developer"]}
+                                words={["MERN Full Stack Web Developer", "Web Designer", "Web Developer", "Front End Developer", "Back End Developer"]}
                                 loop={5}
                                 cursor
                                 cursorStyle='|'
@@ -34,19 +33,18 @@ export default function Banner() {
                                 onLoopDone={handleDone}
                                 onType={handleType}
                             />
-                            </p>
+                        </p>
 
-                            <div className="d-flex align-items-center">
-                                <a href={resume} download="resume"  className="btn btn-primary py-3 px-4 cv-btn">Download CV</a>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <img className="img-fluid main-img" src="./Images/Me.png" alt="" />
+                        <div className="resume">
+                            <a href={resume} download="resume" className="btn btn-primary">Download CV</a>
                         </div>
                     </div>
                 </div>
+                <div className="">
+                    <img className="main-img" src="./Images/Me.png" alt="" />
+                </div>
             </div>
-           
+
         </>
     )
 }

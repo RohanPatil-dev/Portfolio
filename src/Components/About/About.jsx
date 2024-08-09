@@ -18,13 +18,12 @@ const location = useLocation()
 
   return (
     <>
-       <div class="container" data-aos="fade-up">
-            <div class="row justify-content-start align-items-center about-gridy">
-                <div class="col-lg-5 about-img">
+       <div class="" data-aos="fade-up" > 
+            <div class="about-gridy" >
+                <div class="about-img">
                         <img class="skills_img" src="./Images/about-us.png" alt="" />
                 </div>
 
-                <div class="offset-lg-1 col-lg-5">
                     <div class="main_title text-left">
                         <h1>LET'S  <br />
                             INTRODUCE ABOUT <br />
@@ -41,7 +40,7 @@ const location = useLocation()
                     </div>
                 </div>
             </div>
-        </div>
+   
 
     {location.pathname === "/about" ? <Footer/> : <></>}
       

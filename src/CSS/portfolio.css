@@ -4,31 +4,32 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+  }
+
 .header {
     border-bottom: 2px solid gray;
 }
 
 .logo {
-    position: relative;
-    right: 180px;
     height: 70px;
-    width: 170px;
-    border-radius: 20px;
+    width: 140px;
 }
 
-.nav-title{
+.nav-title {
     position: relative;
     color: white;
     font-size: 22px;
-    right: 202px;
     top: 6px;
+    right: 20px;
     font-weight: bold;
 }
 
 .nav {
     font-size: 17px;
     position: relative;
-    left: 30rem;
+    left: 40rem;
 }
 
 .nav li {
@@ -71,58 +72,59 @@
     font-weight: 800;
 }
 
+#home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 .main-img {
     position: relative;
-    left: 188px;
+    left: 435px;
     height: 650px;
 }
 
-#home {
-    height: 650px;
+.info {
+    width: 500px;
+    padding: 10px;
+}
+
+.info div {
+    position: relative;
+    top: 180px;
+    left: 100px;
 }
 
 .title {
-    position: relative;
-    bottom: 30px;
+    position: absolute;
+    top: 30px;
+    font-size: 30px;
     color: white;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 80px;
 }
 
 .typewriter {
-    position: relative;
-    bottom: 40px;
-    font-size: 37px;
+    position: absolute;
+    top: 140px;
+    width: 800px;
+    font-size: 35px;
+    font-weight: 600;
 }
 
-.resume {
-    position: relative;
-    bottom: 10px;
-}
-
-.cv-btn {
+.resume a {
+    position: absolute;
+    right: 450px;
+    padding: 15px;
     border-radius: 20px;
     background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
 }
 
-.cv-btn:hover {
+.resume a:hover {
     /* background: white; */
     background: linear-gradient(to right, #42f0b9 0%, #cb4fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
     color: black;
     font-weight: 600;
-    border: 1px solid gray;
-    animation-name: button;
-    animation-timing-function: ease-in;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-#about {
-    padding: 100px;
-}
-
-.bg-gray {
-    background-color: #f7f9fb;
 }
 
 /* about */
@@ -132,24 +134,32 @@
     flex-direction: row;
     gap: 30px 30px;
     padding: 50px;
+    justify-content: center;
+    margin-top: 70px;
 }
+
 
 .about-img {
     position: relative;
     right: 200px;
     margin-top: 30px;
+    width: 300px;
+
 }
 
 .main_title {
     position: relative;
-    bottom: 30px;
+    top: 60px;
+    left: 200px;
     padding: 60px;
-    width: 600px;
+    width: 700px;
+    height: 400px;
 }
 
 .main_title h1 {
     font-weight: bolder;
 }
+
 
 /* skills */
 .skill-gridy {
@@ -162,11 +172,22 @@
     width: 600px;
 }
 
+.skills {
+    position: relative;
+    left: 230px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
 .containers {
     display: grid;
     grid-template-columns: auto auto;
     padding: 40px;
     width: 900px;
+}
+
+#skill {
+    margin-top: 80px;
 }
 
 #skill .progress {
@@ -199,7 +220,8 @@
     padding: 20px;
     font-size: 40px;
     font-weight: bold;
-    margin-left: 300px;
+    left: 300px;
+    width: 200px;
 }
 
 .experienced {
@@ -210,7 +232,17 @@
     margin-top: 50px;
 }
 
+
 /* service */
+.service-div {
+    margin-top: 120px;
+}
+
+.feature_inner {
+    margin-top: 50px;
+}
+
+
 .feature_item {
     padding: 45px 25px;
     text-align: center;
@@ -238,22 +270,23 @@
     background: #fff;
 }
 
-.main_title {
+.service_title {
+    position: relative;
+    left: 180px;
     text-align: center;
     margin-left: 80px;
+    width: 600px;
+    color: gray;
 }
 
-.main_title h2 {
+
+.service_title h2 {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 15px;
     line-height: 50px;
     text-transform: uppercase;
-}
-
-.main_title p {
-    margin-bottom: 0px;
-    color: gray;
+    color: black;
 }
 
 
@@ -286,6 +319,7 @@
 .links a {
     text-decoration: none;
 }
+
 
 /* footer */
 .footer {
@@ -341,7 +375,6 @@
 
 .social-container a:hover {
     background-color: #252122;
-    border: 2px solid rgb(111, 208, 240);
 }
 
 .copyright {
