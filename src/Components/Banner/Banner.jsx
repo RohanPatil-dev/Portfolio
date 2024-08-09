@@ -23,7 +23,7 @@ export default function Banner() {
                         <p className="mb-3 title">Rohan Patil</p>
                         <p className="typed-text-output text-light typewriter">
                             <Typewriter
-                                words={["MERN Full Stack Web Developer", "Web Designer", "Web Developer", "Front End Developer", "Back End Developer"]}
+                                words={["MERN Full Stack Web Developer", "Web Designer", "Front End Developer", "Back End Developer"]}
                                 loop={5}
                                 cursor
                                 cursorStyle='|'

@@ -29,14 +29,10 @@ const location = useLocation()
                             INTRODUCE ABOUT <br />
                             MYSELF</h1>
                         <p className="about-desc">
-                            Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven 
-                            midst their. Beast creepeth. Fish days.
+                        I am a passionate web developer.I create dynamic and user-friendly websites. My expertise spans across frontend and backend development, with a focus on delivering seamless user experiences and efficient code.
                         </p>
                         <p className="about-desc">
-                            Is give may shall likeness made yielding spirit a itself together created after sea 
-                            is in beast beginning signs open god you're gathering whose gathered cattle let. 
-                            Creature whales fruit unto meat the life beginning all in under give two.
-                        </p>
+                        I believe in continuous learning and staying up-to-date with the latest trends in web development. My approach is user-centric, ensuring that every project I work on is not just visually appealing but also functional and efficient.  </p>
                     </div>
                 </div>
             </div>
