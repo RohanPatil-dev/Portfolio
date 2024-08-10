@@ -6,7 +6,6 @@ import 'aos/dist/aos.css'; // Import the CSS file
 import { projects } from "../../Data/Projects"
 import { Link } from "react-router-dom";
 
-
 export default function Grid() {
 
     useEffect(() => {
@@ -15,6 +14,7 @@ export default function Grid() {
             once: false, // Whether animation should happen only once - while scrolling down
         });
     }, []);
+
 
     return (
         <>
@@ -27,12 +27,12 @@ export default function Grid() {
                                     <div className="col-lg-4" data-aos={`${value.animation}`}>
                                         <div className="text-container ml-2">
                                             <div className="image-container mt-5">
-                                                <a href="">
-                                                    <img className="img-fluid project-img" src={value.img} alt="alternative" />
-                                                </a>
+                                                <img className="img-fluid project-img" src={value.img} alt="Alternative" />
                                             </div>
-                                            <p className="mt-1 links"><strong>For: </strong>{value.title}<strong> Project: </strong>{value.description.slice(0, 35) + "..."}<Link to={value.links}>Read More</Link></p>
                                         </div>
+                                       <p className="mt-1 links"><strong>For: </strong>{value.title}<strong> Project: </strong>{value.description.slice(0, 35) + "..."}
+                                       <Link to={value.links}>Read More</Link>
+                                       </p>
                                     </div>
 
                                 </>
@@ -42,5 +42,6 @@ export default function Grid() {
                 </div>
             </div>
         </>
+
     )
 }

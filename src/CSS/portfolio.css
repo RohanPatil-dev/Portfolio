@@ -6,7 +6,15 @@
 
 body {
     overflow-x: hidden;
-  }
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
 .header {
     border-bottom: 2px solid gray;
@@ -17,13 +25,13 @@ body {
     width: 140px;
 }
 
-.nav-title {
-    position: relative;
-    color: white;
-    font-size: 22px;
-    top: 6px;
-    right: 20px;
+.nav-title{
     font-weight: bold;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 23px;
 }
 
 .nav {
@@ -45,6 +53,7 @@ body {
     font-size: 20px;
     position: relative;
     left: 10px;
+    text-align: center;
 }
 
 .nav li::after {
@@ -72,56 +81,63 @@ body {
     font-weight: 800;
 }
 
+
 #home {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+    height: 600px;
 }
 
-.main-img {
+/* .banner-1,
+.banner-2 {
+    border: 2px solid red;
+} */
+
+.banner-1 {
+    padding: 40px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     position: relative;
-    left: 435px;
-    height: 650px;
+    left: 50px;
+    top: 40px;
 }
 
-.info {
-    width: 500px;
-    padding: 10px;
-}
-
-.info div {
-    position: relative;
-    top: 180px;
-    left: 100px;
+.banner-1 h1 {
+    font-size: 40px;
 }
 
 .title {
-    position: absolute;
-    top: 30px;
-    font-size: 30px;
     color: white;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 60px;
+    width: 500px;
 }
 
 .typewriter {
-    position: absolute;
-    top: 140px;
-    width: 800px;
+    width: 500px;
     font-size: 35px;
     font-weight: 600;
 }
 
+.banner-2{
+    margin-top: 30px;
+}
+
 .resume a {
-    position: absolute;
-    right: 450px;
     padding: 15px;
     border-radius: 20px;
     background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
 }
 
 .resume a:hover {
-    /* background: white; */
     background: linear-gradient(to right, #42f0b9 0%, #cb4fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
     color: black;
     font-weight: 600;
@@ -129,107 +145,17 @@ body {
 
 /* about */
 
-.about-gridy {
+.about-gridy{
     display: flex;
     flex-direction: row;
-    gap: 30px 30px;
-    padding: 50px;
+    flex-wrap: nowrap;
     justify-content: center;
-    margin-top: 70px;
+    align-items: center;
+    margin-top: 100px;
 }
 
-
-.about-img {
-    position: relative;
-    right: 200px;
-    margin-top: 30px;
-    width: 300px;
-
-}
-
-.main_title {
-    position: relative;
-    top: 60px;
-    left: 200px;
-    padding: 60px;
-    width: 700px;
-    height: 400px;
-}
-
-.main_title h1 {
+.main_title h1{
     font-weight: bolder;
-}
-
-
-/* skills */
-.skill-gridy {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    position: relative;
-    left: 30px;
-    gap: 30px 30px;
-    padding: 40px;
-    width: 600px;
-}
-
-.skills {
-    position: relative;
-    left: 230px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.containers {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 40px;
-    width: 900px;
-}
-
-#skill {
-    margin-top: 80px;
-}
-
-#skill .progress {
-    height: 5px;
-    width: 240px;
-    border-radius: 5px;
-}
-
-#skill .progress .progress-bar {
-    border-radius: 5px;
-    animation: bar 4s ease-in-out forwards;
-}
-
-#skill .nav-pills .nav-link {
-    color: var(--dark);
-}
-
-#skill .nav-pills .nav-link.active {
-    color: #FFFFFF;
-}
-
-#skill .tab-content hr {
-    width: 30px;
-}
-
-/* experience */
-.experience {
-    position: relative;
-    bottom: 19px;
-    padding: 20px;
-    font-size: 40px;
-    font-weight: bold;
-    left: 300px;
-    width: 200px;
-}
-
-.experienced {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
-    margin-left: 150px;
-    margin-top: 50px;
 }
 
 
@@ -240,6 +166,7 @@ body {
 
 .feature_inner {
     margin-top: 50px;
+    margin-left: 10px;
 }
 
 
@@ -271,11 +198,11 @@ body {
 }
 
 .service_title {
-    position: relative;
-    left: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-left: 80px;
-    width: 600px;
     color: gray;
 }
 
@@ -287,6 +214,79 @@ body {
     line-height: 50px;
     text-transform: uppercase;
     color: black;
+}
+
+/* skills */
+
+.skills{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#skilling{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.skill-gridy{
+    width: 600px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px 30px;
+    margin-left: 100px;
+}
+
+#skill {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-self: center;
+}
+
+.progress {
+    height: 5px;
+    width: 240px;
+    border-radius: 5px;
+}
+
+.progress .progress-bar {
+    border-radius: 5px;
+    animation: bar 4s ease-in-out forwards;
+}
+
+.nav-pills .nav-link {
+    color: var(--dark);
+}
+
+.nav-pills .nav-link.active {
+    color: #FFFFFF;
+}
+
+.tab-content hr {
+    width: 30px;
+}
+
+/* experience */
+
+.experience{
+    text-align: center;
+    font-weight: bold;
+}
+
+.experienced{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -319,6 +319,7 @@ body {
 .links a {
     text-decoration: none;
 }
+
 
 
 /* footer */

@@ -1,7 +1,7 @@
 import React from "react"
 import "../../CSS/portfolio.css"
-import "../../CSS/project.css"
-import "../../CSS/media.css"
+// import "../../CSS/project.css"
+// import "../../CSS/media.css"
 
 import Banner from "../Banner/Banner"
 import About from "../About/About"
@@ -13,9 +13,9 @@ import Footer from "../Footer/Footer"
 export default function Index() {
   return (
     <>
-        <Banner />
-         <About />
-        <Containers />
+        {/* <Banner /> */}
+         {/* <About />
+        <Containers /> */}
         <Service />
         <Projects />
         <Footer /> 

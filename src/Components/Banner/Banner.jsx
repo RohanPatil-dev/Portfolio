@@ -1,50 +1,46 @@
-import React from "react"
-
-import resume from "../../Data/CV/Rohan_Patil_Fullstack_WebDev.pdf"
-
-import { Typewriter } from 'react-simple-typewriter'
+import React from "react";
+import resume from "../../Data/CV/Rohan_Patil_Fullstack_WebDev.pdf";
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Banner() {
 
     const handleType = (count) => {
-        console.log(count)
-    }
+        console.log(count);
+    };
 
     const handleDone = () => {
-        console.log(`Done after 5 loops!`)
-    }
+        console.log(`Done after 5 loops!`);
+    };
 
     return (
         <>
-            <div className="bg-dark" id="home" >
-                <div className="info">
-                    <div>
-                        <h1 className="text-primary mb-3">I'm</h1>
-                        <p className="mb-3 title">Rohan Patil</p>
-                        <p className="typed-text-output text-light typewriter">
-                            <Typewriter
-                                words={["MERN Full Stack Web Developer", "Web Designer", "Front End Developer", "Back End Developer"]}
-                                loop={5}
-                                cursor
-                                cursorStyle='|'
-                                typeSpeed={70}
-                                deleteSpeed={50}
-                                delaySpeed={1000}
-                                onLoopDone={handleDone}
-                                onType={handleType}
-                            />
-                        </p>
+            <div id="home" className="bg-dark">
+                <div className="banner-1">
+                    <h1 className="text-primary mb-3">I'm</h1>
+                    <p className="mb-3 title">Rohan Patil</p>
+                    <p className="text-light typewriter">
+                        <Typewriter
+                            words={["MERN Full Stack Web Developer", "Web Designer", "Front End Developer", "Back End Developer"]}
+                            loop={5}
+                            cursor
+                            cursorStyle="|"
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                            onLoopDone={handleDone}
+                            onType={handleType}
+                        />
+                    </p>
 
-                        <div className="resume">
-                            <a href={resume} download="resume" className="btn btn-primary">Download CV</a>
-                        </div>
+                    <div className="resume">
+                        <a href={resume} download="resume" className="btn btn-primary">Download CV</a>
                     </div>
                 </div>
-                <div className="">
-                    <img className="main-img" src="./Images/Me.png" alt="" />
+                <div className="banner-2">
+                    <img src="./Images/Me.png" alt="Description" />
                 </div>
-            </div>
 
+            </div>
         </>
-    )
+    );
 }
